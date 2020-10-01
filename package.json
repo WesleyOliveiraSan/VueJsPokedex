@@ -1,11 +1,14 @@
 {
   "name": "pokedex",
   "version": "0.1.0",
+  "homepage": "/VueJsPokedex",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.20.0",
